@@ -4,13 +4,20 @@
     padding: 0;
 }
 
+:root {
+    --yellow: #FCCB5C;
+    --blue: #4990CD;
+    --red: #E84957;
+    --font-color: #000000;
+}
+
 html, body {
     height: 100%;
 }
 
 body {
-    background-color: #F7CC6E;
-    color: #000;
+    background-color: var(--yellow);
+    color: var(--font-color);
     font-family: 'Montserrat Alternates', sans-serif;
 }
 
@@ -212,7 +219,7 @@ p {
 }
 
 .section-temaki {
-    background-color: #5B8FC9;
+    background-color: var(--blue);
     height: 900px;
     display: flex;
     flex-direction: column;
@@ -238,7 +245,7 @@ p {
 .red-rectangule {
     height: 100%;
     width: 100%;
-    background-color: #D7545A;
+    background-color: var(--red);
     position: absolute;
     top: 20px;
     left: 20px;
@@ -247,7 +254,7 @@ p {
 .yellow-rectangule {
     height: 100%;
     width: 100%;
-    background-color: #F7CC6E;
+    background-color: var(--yellow);
     position: absolute;
     right: 20px;
     bottom: 20px;
@@ -372,7 +379,7 @@ p {
     .red-rectangule {
         height: 100%;
         width: 100%;
-        background-color: #D7545A;
+        background-color: var(--red);
         position: absolute;
         top: 20px;
         left: 20px;
@@ -381,7 +388,7 @@ p {
     .yellow-rectangule {
         height: 100%;
         width: 100%;
-        background-color: #F7CC6E;
+        background-color: var(--yellow);
         position: absolute;
         right: 20px;
         bottom: 20px;
