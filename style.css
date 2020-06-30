@@ -177,10 +177,18 @@ p {
     font-weight: 900;
 }
 
+.opening-time {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
 .section-1 {
     display: flex;
     flex-direction: column;
-    padding-top: 30px;
     padding-bottom: 30px;
 }
 
@@ -329,13 +337,6 @@ p {
 }
 
 
-.fifis-bg {
-    width: 100%;
-    background-image: url(img/fifis.png);
-    background-size: cover;
-}
-
-
 
 @media (min-width: 800px) {
 
@@ -370,12 +371,15 @@ p {
         left: 50px;
     }
 
+    .opening-time {
+        margin-left: 45%;
+    }
+
     .section-1 {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        padding-top: 50px;
         padding-bottom: 50px;
     }
 
