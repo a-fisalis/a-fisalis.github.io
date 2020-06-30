@@ -227,14 +227,23 @@ p {
     align-items: center;
 }
 
-.temaki-photo {
+.section-quiche {
+    background-color: var(--red);
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.section-photo {
     margin: 0 auto;
     position: relative;
     max-height: 400px;
     max-width: 320px;
 }
 
-.temaki-photo img {
+.section-photo img {
     max-height: 100%;
     max-width: 100%;
     margin: 0 auto;
@@ -260,27 +269,73 @@ p {
     bottom: 20px;
 }
 
-.temaki-zoom {
-    margin: 0 auto;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    width: 320px;
+.blue-rectangule {
+    height: 100%;
+    width: 100%;
+    background-color: var(--blue);
+    position: absolute;
+    top: 20px;
+    left: 20px;
 }
 
-.temaki-background {
+.zoom {
+    margin: 0 auto;
+    position: relative;
+    max-height: 400px;
+    display: flex;
+    justify-content: center;
+}
+
+.zoom img {
+    max-height: 100%;
+    width: 320px;
+    margin: 0 auto;
+    z-index: 99;
+}
+
+.zoom1 {
+    margin: 0 auto;
+    position: relative;
+    max-height: 400px;
+    display: flex;
+    justify-content: center;
+}
+
+.zoom1 img {
+    max-height: 100%;
+    width: 320px;
+    margin: 0 auto;
+}
+
+.p-background {
     text-align: end;
     position: absolute;
     margin-top: -30px;
     margin-right: 170px;
 }
 
-.temaki-zoom img {
-    max-height: 100%;
-    max-width: 100%;
-    margin: 0 auto;
-    z-index: 99;
+.qui p {
+    position: absolute;
+    top: -40px;
+    left: -30px;
+    color: var(--blue);
 }
+
+.che p {
+    position: absolute;
+    right: -30px;
+    bottom: -40px;
+    color: var(--yellow);
+}
+
+
+.fifis-bg {
+    width: 100%;
+    background-image: url(img/fifis.png);
+    background-size: cover;
+}
+
+
 
 @media (min-width: 800px) {
 
@@ -360,7 +415,16 @@ p {
         align-items: center;
     }
 
-    .temaki-photo {
+    .section-quiche {
+        background-color: var(--red);
+        height: 700px;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .section-photo {
         float: left;
         margin: 0 auto;
         position: relative;
@@ -368,7 +432,7 @@ p {
         max-width: 320px;
     }
 
-    .temaki-photo img {
+    .section-photo img {
         max-height: 100%;
         max-width: 100%;
         margin: 0 auto;
@@ -376,49 +440,36 @@ p {
         z-index: 99;
     }
 
-    .red-rectangule {
-        height: 100%;
-        width: 100%;
-        background-color: var(--red);
-        position: absolute;
-        top: 20px;
-        left: 20px;
-    }
-
-    .yellow-rectangule {
-        height: 100%;
-        width: 100%;
-        background-color: var(--yellow);
-        position: absolute;
-        right: 20px;
-        bottom: 20px;
-    }
-
-    .temaki-zoom {
+    .zoom {
         float: right;
-        margin: 0 auto;
-        position: relative;
         max-height: 400px;
         width: auto;
-        display: flex;
-        justify-content: center;
     }
 
-    .temaki-background {
+    .zoom img {
+        width: 100%;
+    }
+
+    .zoom1 {
+        float: right;
+        max-height: 400px;
+        width: auto;
+    }
+
+    .zoom1 img {
+        width: 320px;
+    }
+
+    .p-background {
         text-align: center;
         position: absolute;
         margin-top: -50px;
         margin-right: 0;
     }
 
-    .temaki-background .p-medium{
+    .p-background .p-medium{
         font-size: 2.5em;
     }
 
-    .temaki-zoom img {
-        max-height: 100%;
-        max-width: 100%;
-        margin: 0 auto;
-        z-index: 99;
-    }
+
 }
