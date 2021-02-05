@@ -220,11 +220,13 @@ p {
     margin-left: 40px;
 }
 
-.section-2 .side-img {
+.section-2 .row {
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
 }
+
+.section-2 .column {
+    flex: 33.33%
+} 
 
 .section-temaki {
     background-color: var(--blue);
